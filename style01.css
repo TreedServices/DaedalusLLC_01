@@ -1,0 +1,273 @@
+/*This style page is organized as follows:
+
+- classes and styles applied to ALL pages
+- index.html
+- ourServices.html
+- ourHistory.html and youConfidence.html
+- yourConfidence.html
+- 404.html
+
+- closing note by Daedalus LLC
+*/
+
+
+/* ALL .html pages include these */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    rgba(229, 229, 229, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+}
+
+nav .logo {
+  width: 10vw; /*change to vw*/
+  height: auto;
+}
+
+nav p {
+  text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  left: 30vw;
+  font-size: 1.5vw;
+}
+
+nav ul {
+  position: absolute;
+  right: 5vw;
+  bottom: 5vh;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 4vw; /*change to vw*/
+}
+nav ul li a {
+  text-decoration: none;
+  color: darkred;
+  font-size: 1.5vw; /*change to vw*/
+}
+
+nav ul li a:hover {
+  color: white;
+text-decoration: none;
+}
+
+.content{
+    margin-top:70vh;
+    align-content: center;
+    padding: 5%;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.707rem;
+  font-family: Arial, Georgia, serif;
+}
+
+/* -------------------------- */
+/* index.html styles*/
+
+.content h1 {
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  text-shadow: .25rem .25rem #000000;
+  font-family: Arial, Georgia, "Times New Roman", Times, serif;
+  font-style: none; /*italic*/
+  background-image: linear-gradient(rgb(143, 41, 37,.8), rgb(186,28,22,.8));
+  padding:3%;
+  border-radius: 25%;
+  border: solid white .35rem;
+}
+
+
+/* -------------------------- */
+/* both index.html and ourServices.html styles*/
+
+.backvideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backvideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .backvideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+/* -------------------------- */
+/* ourServices.html styles*/
+
+.heading {
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  padding: 3vw;
+  margin: 20vw 0vw 0vw 0vw;
+  font-weight: 900;
+  font-size: 2.827rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display:inline-block;
+
+}
+
+.serviceList{
+    position:relative;
+    display:inline-block;
+    align-content: space-between;
+}
+
+.table{
+    background-image: linear-gradient( 
+        rgba(229, 229, 229, 0.9),
+        rgba(255, 255, 255, 0.7));
+}
+
+.table tr.tableRow:hover {
+    background-color:grey;
+    visibility: visible;
+}
+
+.table tr a {
+    text-decoration: none;
+    color:inherit;
+}
+
+#excavationService{
+    max-width:100vw;
+    height:50vh;
+    background-image:
+        linear-gradient(rgba(229, 229, 229, 0.9),
+        rgba(255, 255, 255, 0.7));
+    margin:0 0 3vh 0;
+    position:relative;
+    color:darkred;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: Arial, serif;
+    font-style: italic;
+    padding: 2%;
+    
+    
+}
+
+.slideshow {
+    display:inline-block;
+    margin:auto;
+}
+
+
+.slideshow img{
+    display:inline-flex;
+    height:30vh;
+    width:auto;
+    margin:0;
+    border-radius:5%;
+}
+
+
+/* -------------------------- */
+/* ourHistory.html and yourConfidence styles*/
+#historyPic{
+    margin:auto;
+    max-width: 100vw;
+    max-height:auto;
+    padding:0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* -------------------------- */
+/* yourConfidence.html styles*/
+
+#confidence{
+    margin:15% 5% 5% 5%;
+    display:inline-flex;
+    position:relative; 
+    color: gainsboro;  
+    background-image: linear-gradient(
+    rgba(229, 229, 229, 0.2),
+    rgba(255, 255, 255, 0.2));
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border-radius:5%;
+    text-align: center;
+}
+.container div{
+    padding:2.5%;
+    margin:auto;
+}
+
+
+
+/* -------------------------- */
+/* 404.html styles*/
+
+#notFound{
+    width:55vw;
+    height:55vh;
+    margin:0;
+    padding:0;
+    background-repeat: no-repeat;
+    background-size:100%;
+    position:relative;
+    text-align:center;
+
+}
+#notFound img{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -50vh;
+}
+
+#notFound h3{
+    margin-top:-35vh;
+}
+
+/* -------------------------- */
+/* CLOSING NOTE*/
+/* This css has been created for and in service to Rapid Services LLC by Daedalus LLC */
