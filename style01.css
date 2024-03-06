@@ -15,8 +15,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing:border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#body{
+    background-color: #EDECEC;
 }
 
 .hero {
@@ -49,7 +53,7 @@ nav {
 }
 
 nav .logo {
-  width: 10vw; /*change to vw*/
+  width: 15vw; /*change to vw*/
   height: auto;
 }
 
@@ -69,7 +73,7 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
   margin-left: 4vw; /*change to vw*/
 }
 nav ul li a {
@@ -79,7 +83,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #EDECEC;
+  color: #7C7C7C;
 text-decoration: none;
 }
 
@@ -89,17 +93,22 @@ text-decoration: none;
     padding: 5%;
 }
 
-footer {
+#footer {
   text-align: center;
-  font-size: 0.707rem;
-  font-family: Arial, Georgia, serif;
+  font-size: 1vw;
+  font-family: Arial, Georgia, sans-serif;
+  margin:.5% 0 0 0;
+  background-color: #EDECEC;
+  padding:0;
+  position:relative;
+  display:block;
 }
 
 /* -------------------------- */
 /* index.html styles*/
 
 .content h1 {
-  font-size: 1.5rem;
+  font-size: 2.5vw;
   color: #EDECEC;
   text-align: center;
   font-family: Arial, Georgia, "Times New Roman", Times, serif;
@@ -135,6 +144,8 @@ footer {
   }
 }
 
+/*
+
 @media screen and (max-width: 481px){
 
     .hero {
@@ -167,7 +178,7 @@ footer {
     }
 
     nav .logo {
-      width: 10vw; /*change to vw*/
+      width: 10vw; 
       height: auto;
     }
 
@@ -188,12 +199,12 @@ footer {
     nav ul li {
       list-style: none;
       display: inline-block;
-      margin-left: 4vw; /*change to vw*/
+      margin-left: 4vw; 
     }
     nav ul li a {
       text-decoration: none;
       color: #BC1D25 ;
-      font-size: 1.5vw; /*change to vw*/
+      font-size: 1.5vw; 
     }
 
     nav ul li a:hover {
@@ -207,18 +218,11 @@ footer {
         padding: 5%;
     }
 
-    footer {
-      text-align: center;
-      font-size: 0.707rem;
-      font-family: Arial, Georgia, serif;
-      margin-top:2.5%;
-      display:block;
-      position:relative;
-    }
   
 
 
 }
+*/
 
 /* -------------------------- */
 /* ourServices.html styles*/
@@ -227,12 +231,13 @@ footer {
   background-color: #BC1D25 ; /*dark red*/
   color: #EDECEC;
   text-align: center;
-  padding: 3vw;
+  position:relative;
+  padding: 2% 35% 2% 35%;
   margin: 20vw 0vw 0vw 0vw;
   font-weight: 900;
-  font-size: 2.827rem;
+  font-size: 3.5vw;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  display:inline-block;
+  
 
 }
 
@@ -248,14 +253,30 @@ footer {
         rgba(255, 255, 255, 0.7));
 }
 
-.table tr.tableRow:hover {
-    background-color:#7C7C7C;
-    visibility: visible;
-}
-
 .table tr a {
     text-decoration: none;
     color:inherit;
+}
+
+.service1, .service2, .service3, .service4 {
+    background-color:inherit;
+}
+
+.service1: hover{
+    background-color:#7C7C7C;
+    visibility: visible; 
+}
+.service2: hover{
+    background-color:#7C7C7C;
+    visibility: visible;
+}
+.service3: hover{
+    background-color:#7C7C7C;
+    visibility: visible;
+}
+.service4: hover{
+    background-color:#7C7C7C;
+    visibility: visible;
 }
 
 
@@ -265,6 +286,7 @@ footer {
     text-align: right;
 
 }
+
 .serviceSection h3{
     color:#EDECEC;
 }
@@ -277,11 +299,10 @@ footer {
     position:relative;
     float:left;
     display:inline-flex;
-    border: 1.5rem #EDECEC solid;
-    border-radius: 5%;
-    
-    
+    border: 1.5rem rgba(237,236,236,.6) solid;
+    border-radius: 5%;    
 }
+
 #excavationService{
     background-color:#747474;   
     
@@ -314,18 +335,45 @@ footer {
 
 /* -------------------------- */
 /* ourHistory.html and yourConfidence styles*/
-#historyPic{
-    margin:auto;
-    max-width: 100vw;
-    max-height:auto;
-    padding:0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+#historyHero{
+    overflow-y: hidden;
+    height:100vh;
+    width:100vw;
 }
 
+#historyPic{
+    margin:auto;
+    width:80vw;
+    height:auto;
+    padding:0;
+    z-index: -1;
+    position:relative;
+    
+}
 
+#historyPicBlur{
+    width:70vw;
+    height:60vh;
+    max-height:60vh;
+    max-width: 70vw;
+    border:.5vw #7C7C7C solid;
+    border-radius: 15%;
+    margin-top: 15%;
+    position:absolute;
+    z-index:0;
+    padding:0;
+    background-image: linear-gradient( rgba(124, 124,124, 0.9),
+    rgba(124,124,124, 0.8))
+}
+
+#historyPicBlur h1{
+    color:#EDECEC;
+    font-size:2.5vw;
+    margin:5%;
+    font-family:serif;
+    text-align:center;
+    padding:2.5%;
+}
 /* -------------------------- */
 /* ourServices and yourConfidence.html styles*/
 
@@ -338,7 +386,7 @@ section{
     padding:0;
     color:#BC1D25 ;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 2vw;
     font-family: Arial, serif;
     
      
@@ -351,31 +399,31 @@ section{
 
 #confidenceHero{
     background-color: #7C7C7C;
+    height:65vh;
+    width:100vw;
 }
 #overall{
-    width:100vw;
-    height:100vh;
-    overflow: hidden;
-    background-image: url(Rapid_images/graphic.png);
+    width:45vw;
+    height:65vh;
     opacity:0.75;
-    background-repeat: no-repeat;
-    position: relative;
+    position:relative;
+    margin-top:0%;
+    margin-left:50%;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    background-position:center;
+    display:inline-flex;
+    opacity:0.8;
 }
 
-div iframe{
+iframe{
     position:absolute;
-    display:block;
-    width:20vw;
-    height:30vh;
-    left:5%;
-    margin:35% 0 0 0;
+    display:inline-flex;
+    width:40vw;
+
+    margin-right:50%;
+    margin-top:10%;
+    height:40vh;
     border-radius:5%;
-    opacity:.85;
+    opacity:1.0;
 }
 
 .contact{
@@ -383,14 +431,17 @@ div iframe{
     height:inherit;
     display:inline-flex;
     justify-content: center;
-    margin-top:2.5% 0 0 0;
     font-family:Arial, sans-serif;
     color:#0E0E0E;
     font-weight:bolder;
     background-color: #EDECEC ;
 }
+.contactInfo{
+    margin:0.5%;
+    padding:0;
+}
 .contact p{
-    font-size:.75rem;
+    font-size:1.25vw;
     color:#BC1D25;
     font-weight: normal;
 }
@@ -404,7 +455,7 @@ div iframe{
 }
 
 .contact h2{
-    font-size: 2.5rem;
+    font-size: 3.25vw;
 }
 
 .contactInfo{
@@ -418,12 +469,13 @@ div iframe{
     margin:0;
     padding:0;
     display:flex;
-    color:#0E0E0E;
+    color: #0E0E0E;
     height:auto;
 }
 
 .checked {
-    color:#DAA520;
+    color: #EDECEC;
+        
 }
 
 .review {
